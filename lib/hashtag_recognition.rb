@@ -5,8 +5,12 @@ class HashtagRecognition
       unless !subject || subject.empty?
         expression = /#(\S*)/
         matches = subject.scan(expression)
+        result = matches.flatten.collect do |el| 
+          el.gsub('#', '') if el.size > 0 
+        end
 
-        return matches.flatten       
+        result.compact!
+        return result
       else
         return result
       end
