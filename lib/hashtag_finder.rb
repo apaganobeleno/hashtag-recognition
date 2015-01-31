@@ -1,6 +1,6 @@
-require "version"
-
 class HashtagFinder
+  VERSION = "0.0.3"
+
   def self.find_on( subject ) 
     result = []
 

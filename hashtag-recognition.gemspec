@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'version'
+require 'hashtag_finder'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hashtag-recognition"
-  spec.version       = HashtagRecognition::VERSION
+  spec.name          = "hashtag_finder"
+  spec.version       = HashtagFinder::VERSION
   spec.authors       = ["Antonio Pagano"]
   spec.email         = ["ap@wawand.co"]
   spec.summary       = %q{ Simple Hashtag recognition for strings}
@@ -20,5 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.4"
+  spec.add_development_dependency "minitest", "~> 5.5"
+  spec.add_development_dependency "minitest-matchers", "1.4"
   spec.add_development_dependency "codeclimate-test-reporter", '~> 0'
 end
