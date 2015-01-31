@@ -1,4 +1,4 @@
-# hashtag-recognition
+# hashtag_finder
 
 Simple Hash-Tag recognition explorations using the #scan method on the String class.
 

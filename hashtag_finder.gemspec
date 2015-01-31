@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ap@wawand.co"]
   spec.summary       = %q{ Simple Hashtag recognition for strings}
   spec.description   = %q{ Simple Hashtag recognition for strings }
-  spec.homepage      = "https://github.com/apaganobeleno/hashtag-recognition"
+  spec.homepage      = "https://github.com/apaganobeleno/hashtag_finder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
