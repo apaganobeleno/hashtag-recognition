@@ -1,0 +1,16 @@
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.1.2
+  - 2.0.0
+  - 1.9.3
+
+script: 'bundle exec rake test'
+
+notifications:
+  email:
+    recipients:
+      - apagano@wawand.co
+    on_failure: change
+    on_success: never
