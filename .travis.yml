@@ -14,3 +14,6 @@ notifications:
       - apagano@wawand.co
     on_failure: change
     on_success: never
+addons:
+  code_climate:
+    repo_token: 9049d92330ddb6d8e03b86e8e1c64632528f9bfe1233cc2a943e6ed4768e772e
